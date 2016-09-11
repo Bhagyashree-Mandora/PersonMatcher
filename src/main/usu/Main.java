@@ -7,6 +7,9 @@ public class Main {
         Person person2 = new Person("a", "b", "c","123","34");
         Matcher matcher = new Matcher();
         Boolean isMatching = matcher.match(person1, person2);
-        System.out.println(isMatching);
+        MatchWriter fileMatchWriter = new FileMatchWriter("outputFile");
+        MatchWriter consoleMatchWriter = new ConsoleMatchWriter();
+        fileMatchWriter.write(isMatching);
+        consoleMatchWriter.write(isMatching);
     }
 }

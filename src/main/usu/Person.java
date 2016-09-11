@@ -1,6 +1,8 @@
 package main.usu;
 
 public class Person {
+    int objectId;
+
     String _firstName = null;
     String _middleName = null;
     String _lastName = null;
