@@ -1,12 +1,16 @@
 package main.usu;
 
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
-        Person person1 = new Person("a", "b", "c","12","34");
-        Person person2 = new Person("a", "b", "c","123","34");
+        Reader jsonFileReader = new JsonFileReader();
+        List<Person> personList = jsonFileReader.readRecords("test.json");
+
         Matcher matcher = new Matcher();
-        Boolean isMatching = matcher.match(person1, person2);
+        Boolean isMatching = matcher.match(personList);
+
         MatchWriter fileMatchWriter = new FileMatchWriter("outputFile");
         MatchWriter consoleMatchWriter = new ConsoleMatchWriter();
         fileMatchWriter.write(isMatching);

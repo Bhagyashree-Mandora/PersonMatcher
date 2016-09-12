@@ -1,16 +1,16 @@
 package main.usu;
 
-public class Person {
+public class Person implements Comparable{
     int objectId;
 
-    String _firstName = null;
-    String _middleName = null;
-    String _lastName = null;
-    int _birthYear;
-    int _birthMonth;
-    int _birthDay;
-    String _stateFileNumber = null;
-    String _socialSecurityNumber = null;
+    String firstName = null;
+    String middleName = null;
+    String lastName = null;
+    int birthYear;
+    int birthMonth;
+    int birthDay;
+    String stateFileNumber = null;
+    String socialSecurityNumber = null;
 
     String phone1 = null;
     String phone2 = null;
@@ -24,10 +24,15 @@ public class Person {
     String MotherLastName = null;
 
     public Person(String fn, String mn, String ln, String sfn, String ssn){
-        _firstName = fn;
-        _middleName = mn;
-        _lastName = ln;
-        _stateFileNumber = sfn;
-        _socialSecurityNumber = ssn;
+        firstName = fn;
+        middleName = mn;
+        lastName = ln;
+        stateFileNumber = sfn;
+        socialSecurityNumber = ssn;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }
