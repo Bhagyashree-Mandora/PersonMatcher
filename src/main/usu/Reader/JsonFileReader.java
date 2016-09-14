@@ -1,7 +1,8 @@
-package main.usu;
+package main.usu.Reader;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import main.usu.Person;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

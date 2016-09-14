@@ -1,4 +1,4 @@
-package main.usu;
+package main.usu.Writer;
 
 public class ConsoleMatchWriter implements MatchWriter {
     @Override

@@ -1,4 +1,4 @@
-package main.usu;
+package main.usu.Reader;
 
 import java.util.List;
 
