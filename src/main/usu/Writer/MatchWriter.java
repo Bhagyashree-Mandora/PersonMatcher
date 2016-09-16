@@ -1,5 +1,8 @@
 package main.usu.Writer;
 
+import main.usu.MatcherComponents.PersonsPair;
+import java.util.List;
+
 public interface MatchWriter {
-    public boolean write(Boolean isMatching);
+    boolean write(List<PersonsPair> matchingPersonsPair);
 }

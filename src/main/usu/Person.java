@@ -1,6 +1,6 @@
 package main.usu;
 
-public abstract class Person {
+public class Person {
 
     Integer objectId;
     String firstName = null;
@@ -12,4 +12,44 @@ public abstract class Person {
     String gender = null;
     String stateFileNumber = null;
     String socialSecurityNumber = null;
+
+    public Integer getObjectId() {
+        return objectId;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public Integer getBirthYear() {
+        return birthYear;
+    }
+
+    public Integer getBirthMonth() {
+        return birthMonth;
+    }
+
+    public Integer getBirthDay() {
+        return birthDay;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public String getStateFileNumber() {
+        return stateFileNumber;
+    }
+
+    public String getSocialSecurityNumber() {
+        return socialSecurityNumber;
+    }
 }

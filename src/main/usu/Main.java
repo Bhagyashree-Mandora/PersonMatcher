@@ -16,15 +16,15 @@ public class Main {
 
 //        Reader xmlFileReader = new XmlFileReader();
 //        xmlFileReader.readRecords("test.xml");
-//        Person person1 = new Person("a", "b", "c","12","34");
-//        Person person2 = new Person("a", "b", "c","123","34");
 
         Matcher matcher = new Matcher();
-        Boolean isMatching = matcher.match(personList);
+        List matchedPersons = matcher.match(personList);
+
+        System.out.println(matchedPersons.toString());
 
         MatchWriter fileMatchWriter = new FileMatchWriter("outputFile");
         MatchWriter consoleMatchWriter = new ConsoleMatchWriter();
-        fileMatchWriter.write(isMatching);
-        consoleMatchWriter.write(isMatching);
+        fileMatchWriter.write(matchedPersons);
+        consoleMatchWriter.write(matchedPersons);
     }
 }
