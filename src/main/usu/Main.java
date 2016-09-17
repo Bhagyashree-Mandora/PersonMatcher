@@ -2,6 +2,7 @@ package main.usu;
 
 import main.usu.Reader.JsonFileReader;
 import main.usu.Reader.Reader;
+import main.usu.Reader.XmlFileReader;
 import main.usu.Writer.ConsoleMatchWriter;
 import main.usu.Writer.FileMatchWriter;
 import main.usu.Writer.MatchWriter;
@@ -15,7 +16,7 @@ public class Main {
         List<Person> personList = jsonFileReader.readRecords("test.json");
 
 //        Reader xmlFileReader = new XmlFileReader();
-//        xmlFileReader.readRecords("test.xml");
+//        List<Person> personList = xmlFileReader.readRecords("test.xml");
 
         Matcher matcher = new Matcher();
         List matchedPersons = matcher.match(personList);

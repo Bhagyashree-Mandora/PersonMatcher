@@ -2,39 +2,67 @@ package main.usu;
 
 public class Child extends Person {
 
-    String NewbornScreeningNumber = null;
-    String IsPartOfMultipleBirth = null;
-    Integer BirthOrder = null;
-    String BirthCounty = null;
-    String MotherFirstName = null;
-    String MotherMiddleName = null;
-    String MotherLastName = null;
+    String newbornScreeningNumber = null;
+    String isPartOfMultipleBirth = null;
+    Integer birthOrder = null;
+    String birthCounty = null;
+    String motherFirstName = null;
+    String motherMiddleName = null;
+    String motherLastName = null;
 
     public String getNewbornScreeningNumber() {
-        return NewbornScreeningNumber;
+        return newbornScreeningNumber;
     }
 
     public String getIsPartOfMultipleBirth() {
-        return IsPartOfMultipleBirth;
+        return isPartOfMultipleBirth;
     }
 
     public Integer getBirthOrder() {
-        return BirthOrder;
+        return birthOrder;
     }
 
     public String getBirthCounty() {
-        return BirthCounty;
+        return birthCounty;
     }
 
     public String getMotherFirstName() {
-        return MotherFirstName;
+        return motherFirstName;
     }
 
     public String getMotherMiddleName() {
-        return MotherMiddleName;
+        return motherMiddleName;
     }
 
     public String getMotherLastName() {
-        return MotherLastName;
+        return motherLastName;
+    }
+
+    public void setNewbornScreeningNumber(String newbornScreeningNumber) {
+        this.newbornScreeningNumber = newbornScreeningNumber;
+    }
+
+    public void setIsPartOfMultipleBirth(String isPartOfMultipleBirth) {
+        this.isPartOfMultipleBirth = isPartOfMultipleBirth;
+    }
+
+    public void setBirthOrder(Integer birthOrder) {
+        this.birthOrder = birthOrder;
+    }
+
+    public void setBirthCounty(String birthCounty) {
+        this.birthCounty = birthCounty;
+    }
+
+    public void setMotherFirstName(String motherFirstName) {
+        this.motherFirstName = motherFirstName;
+    }
+
+    public void setMotherMiddleName(String motherMiddleName) {
+        this.motherMiddleName = motherMiddleName;
+    }
+
+    public void setMotherLastName(String motherLastName) {
+        this.motherLastName = motherLastName;
     }
 }

@@ -15,8 +15,8 @@ public class XmlFileReader implements Reader {
             JAXBContext context = JAXBContext.newInstance(Person.class);
             Unmarshaller unMarshaller = null;
             unMarshaller = context.createUnmarshaller();
-            Person param = (Person) unMarshaller.unmarshal(new FileInputStream(fileName));
-            System.out.println(param);
+            Person person = (Person) unMarshaller.unmarshal(new FileInputStream(fileName));
+            System.out.println(person);
         } catch (Exception e) {
             e.printStackTrace();
         }
