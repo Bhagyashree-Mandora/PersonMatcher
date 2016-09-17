@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MatchStrategiesList {
-    List<MatchStrategy> matchStrategyList;
+    private List<MatchStrategy> matchStrategyList;
 
     public List<MatchStrategy> create() {
         matchStrategyList = new ArrayList<MatchStrategy>();

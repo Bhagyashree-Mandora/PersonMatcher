@@ -1,4 +1,4 @@
-package main.usu.MatcherComponents;
+package main.usu;
 
 import main.usu.Person;
 

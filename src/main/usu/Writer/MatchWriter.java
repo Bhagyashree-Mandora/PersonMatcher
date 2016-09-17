@@ -1,6 +1,6 @@
 package main.usu.Writer;
 
-import main.usu.MatcherComponents.PersonsPair;
+import main.usu.PersonsPair;
 import java.util.List;
 
 public interface MatchWriter {

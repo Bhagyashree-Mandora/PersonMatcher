@@ -16,7 +16,6 @@ public class JsonFileReader implements Reader {
         List<Person> personList = null;
         try {
             personList = gson.fromJson(new FileReader(fileName), new TypeToken<List<Person>>(){}.getType());
-            personList.forEach(x -> System.out.println("here: " + x));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

@@ -13,15 +13,13 @@ public class Main {
 
     public static void main(String[] args) {
         Reader jsonFileReader = new JsonFileReader();
-        List<Person> personList = jsonFileReader.readRecords("test.json");
+        List<Person> personList = jsonFileReader.readRecords("PersonTestSet.json");
 
 //        Reader xmlFileReader = new XmlFileReader();
 //        List<Person> personList = xmlFileReader.readRecords("test.xml");
 
         Matcher matcher = new Matcher();
         List matchedPersons = matcher.match(personList);
-
-        System.out.println(matchedPersons.toString());
 
         MatchWriter fileMatchWriter = new FileMatchWriter("outputFile");
         MatchWriter consoleMatchWriter = new ConsoleMatchWriter();

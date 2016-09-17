@@ -1,12 +1,12 @@
 package main.usu.Writer;
 
-import main.usu.MatcherComponents.PersonsPair;
+import main.usu.PersonsPair;
 
 import java.io.*;
 import java.util.List;
 
 public class FileMatchWriter implements MatchWriter {
-    String outputFileName;
+    private String outputFileName;
 
     public FileMatchWriter(String outputFile) {
         outputFileName = outputFile;
@@ -18,7 +18,7 @@ public class FileMatchWriter implements MatchWriter {
             PrintWriter writer = new PrintWriter(outputFileName, "UTF-8");
             writer.println("Matched pairs:");
             for(PersonsPair personsPair : matchingPersonsPair) {
-                System.out.println("(" + personsPair.getPerson1().getObjectId() + "," + personsPair.getPerson2().getObjectId() + ")");
+                writer.println("(" + personsPair.getPerson1().getObjectId() + "," + personsPair.getPerson2().getObjectId() + ")");
             }
             writer.close();
         } catch (IOException ex) {
