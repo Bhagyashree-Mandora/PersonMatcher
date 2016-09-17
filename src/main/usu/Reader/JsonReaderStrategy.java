@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.List;
 
-public class JsonFileReader implements Reader {
+public class JsonReaderStrategy implements ReaderStrategy {
 
     @Override
     public List<Person> readRecords(String fileName) {

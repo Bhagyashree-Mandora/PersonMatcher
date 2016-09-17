@@ -5,10 +5,10 @@ import main.usu.PersonsPair;
 import java.io.*;
 import java.util.List;
 
-public class FileMatchWriter implements MatchWriter {
+public class FileWriterStrategy implements WriterStrategy {
     private String outputFileName;
 
-    public FileMatchWriter(String outputFile) {
+    public FileWriterStrategy(String outputFile) {
         outputFileName = outputFile;
     }
 

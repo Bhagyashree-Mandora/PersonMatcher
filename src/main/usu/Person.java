@@ -1,7 +1,6 @@
 package main.usu;
 
 public class Person {
-
     Integer objectId;
     String firstName = null;
     String middleName = null;
